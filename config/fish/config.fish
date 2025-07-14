@@ -42,8 +42,8 @@ for pattern in (cat $HOME/dotfiles/fzf/fzf-exclude)
     set FZFARGS $FZFARGS -E \"$pattern\"
 end
 
-set -u FZF_CTRL_T_COMMAND "fd -H $FZFARGS"
-set -U FZF_ALT_C_COMMAND "fd -H -t d $FZFARGS"
+set -x FZF_CTRL_T_COMMAND "fd -H $FZFARGS"
+set -x FZF_ALT_C_COMMAND "fd -H -t d $FZFARGS . $HOME"
 
 fzf_key_bindings
 
