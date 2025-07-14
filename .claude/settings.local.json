@@ -56,7 +56,9 @@
       "mcp__git__git_commit",
       "Bash(./scripts/sync-mcp-servers.sh:*)",
       "Bash(timeout:*)",
-      "Bash(dos2unix:*)"
+      "Bash(dos2unix:*)",
+      "Bash(rg:*)",
+      "Bash(fd:*)"
     ],
     "deny": []
   }
