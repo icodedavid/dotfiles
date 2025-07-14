@@ -1,7 +1,13 @@
 #!/bin/bash
 
 export DOTFILES_DIR=$HOME/dotfiles
-export OS=$(awk '/^ID=/' /etc/os-release | sed -e 's/ID=//' -e 's/"//g' | tr '[:upper:]' '[:lower:]')
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    export OS="macos"
+elif [[ -f /etc/os-release ]]; then
+    export OS=$(awk '/^ID=/' /etc/os-release | sed -e 's/ID=//' -e 's/"//g' | tr '[:upper:]' '[:lower:]')
+else
+    export OS="unknown"
+fi
 
 add_paths_from_file() {
     local file_path="$1"

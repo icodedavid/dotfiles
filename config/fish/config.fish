@@ -64,3 +64,6 @@ set --export PATH $BUN_INSTALL/bin $PATH
 set -gx VOLTA_HOME "$HOME/.volta"
 set -gx PATH "$VOLTA_HOME/bin" $PATH
 
+# PDM - Python package manager
+fish_add_path "$HOME/Library/Python/3.9/bin"
+
