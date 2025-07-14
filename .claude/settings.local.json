@@ -59,7 +59,8 @@
       "Bash(dos2unix:*)",
       "Bash(rg:*)",
       "Bash(fd:*)",
-      "Bash(-print)"
+      "Bash(-print)",
+      "mcp__git__git_push"
     ],
     "deny": []
   }
