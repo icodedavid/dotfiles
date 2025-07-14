@@ -58,7 +58,8 @@
       "Bash(timeout:*)",
       "Bash(dos2unix:*)",
       "Bash(rg:*)",
-      "Bash(fd:*)"
+      "Bash(fd:*)",
+      "Bash(-print)"
     ],
     "deny": []
   }
